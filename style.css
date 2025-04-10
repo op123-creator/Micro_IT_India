@@ -1,18 +1,63 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    background: #e0f7fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .weather-app {
-    text-align: center;
-    background: rgb(145, 23, 23);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-app {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(5px); /* smooth frosted-glass effect */
+}
+
+.weather-app h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.weather-app input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.weather-app input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.weather-app button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.weather-app button:hover {
+  background-color: #004d40;
+}
+
+#weatherResult {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
