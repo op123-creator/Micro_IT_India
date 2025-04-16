@@ -10,28 +10,28 @@ body {
 }
 
 .weather-app {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
   padding: 30px 40px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  width: 100%;
+  text-align: center;
   max-width: 400px;
-  backdrop-filter: blur(5px); /* smooth frosted-glass effect */
+  width: 100%;
 }
 
 .weather-app h1 {
-  margin-bottom: 20px;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .weather-app input {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 16px;
   transition: border-color 0.3s;
 }
 
@@ -42,9 +42,9 @@ body {
 
 .weather-app button {
   background-color: #00796b;
-  color: white;
-  border: none;
+  color: #fff;
   padding: 12px 20px;
+  border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
